@@ -21,19 +21,19 @@
           },
           colors: {
             brand: {
+              celeste: '#00a8cc',
+              celesteHover: '#008ea6',
+              celesteLight: '#f0faff',
+              celesteBorder: '#b9e6f2',
               lime: '#adbc2f',
-              accent: '#adbc2f',
               limeHover: '#9bb024',
               limeLight: '#f7f9e8',
-              limeBorder: '#e2ebb3',
-              teal: '#00a8cc',
-              tealHover: '#008ea6',
               dark: '#111827',
               gray: '#6b7280',
             }
           },
           boxShadow: {
-            'glow': '0 10px 25px -3px rgba(173, 188, 47, 0.45)',
+            'glow': '0 10px 25px -3px rgba(0, 168, 204, 0.45)',
             'soft': '0 12px 30px -4px rgba(0, 0, 0, 0.04)',
             'card': '0 2px 10px rgba(0, 0, 0, 0.03)',
           }
@@ -94,7 +94,7 @@
       background: #222;
     }
 
-    .cmp:focus-visible { box-shadow: 0 0 0 2px var(--signal, #adbc2f); }
+    .cmp:focus-visible { box-shadow: 0 0 0 2px var(--signal, #00a8cc); }
 
     .cmp-img {
       position: absolute;
@@ -205,7 +205,7 @@
     }
   </style>
 </head>
-<body class="selection:bg-lime-100 selection:text-lime-900">
+<body class="selection:bg-cyan-100 selection:text-cyan-900">
 
   <!-- ==================== TOP BAR ==================== -->
   <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 w-full bg-transparent border-b border-transparent transition-all duration-300 ease-in-out">
@@ -215,7 +215,7 @@
       <a href="#" class="flex items-center gap-2.5 sm:gap-3 group">
         <img src="logo.png" alt="Dra. Johanna Medina Logo" class="w-9 sm:w-10 h-9 sm:h-10 object-contain group-hover:scale-105 transition-transform">
         <div class="leading-tight">
-          <span class="text-lg sm:text-[21px] font-extrabold tracking-tight text-neutral-900 block">Dra. Johanna <span class="text-[#adbc2f]">Medina</span></span>
+          <span class="text-lg sm:text-[21px] font-extrabold tracking-tight text-neutral-900 block">Dra. Johanna <span class="text-[#00a8cc]">Medina</span></span>
           <span class="text-[9px] sm:text-[10px] font-bold text-[#00a8cc] tracking-wider uppercase block">Odontología Integral | Preventiva</span>
         </div>
       </a>
@@ -233,7 +233,7 @@
         <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden p-2 text-neutral-700 hover:text-black">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
-        <button onclick="openBookingModal()" class="inline-flex items-center gap-1.5 sm:gap-2 border border-neutral-300 hover:border-black bg-white px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-bold tracking-wider text-neutral-800 transition-all shadow-sm active:scale-95">
+        <button onclick="openBookingModal()" class="inline-flex items-center gap-1.5 sm:gap-2 border border-[#00a8cc] hover:bg-[#00a8cc] hover:text-white bg-white px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-bold tracking-wider text-[#00a8cc] transition-all shadow-sm active:scale-95">
           <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 fill-current" viewBox="0 0 24 24">
             <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
           </svg>
@@ -245,10 +245,10 @@
     <!-- Mobile Navigation Dropdown -->
     <div id="mobileMenu" class="hidden md:hidden border-t border-neutral-100 bg-white/95 backdrop-blur-md">
       <nav class="flex flex-col px-6 py-4 space-y-3 text-sm font-semibold text-neutral-700">
-        <a href="#hero" class="hover:text-[#adbc2f] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">INICIO</a>
-        <a href="#treatments" class="hover:text-[#adbc2f] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">TRATAMIENTOS</a>
-        <a href="#results" class="hover:text-[#adbc2f] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">RESULTADOS</a>
-        <a href="#faq" class="hover:text-[#adbc2f] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">FAQ</a>
+        <a href="#hero" class="hover:text-[#00a8cc] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">INICIO</a>
+        <a href="#treatments" class="hover:text-[#00a8cc] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">TRATAMIENTOS</a>
+        <a href="#results" class="hover:text-[#00a8cc] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">RESULTADOS</a>
+        <a href="#faq" class="hover:text-[#00a8cc] transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">FAQ</a>
       </nav>
     </div>
   </header>
@@ -310,7 +310,7 @@
 
             <!-- Simple, punchy CTA & Subtitle -->
             <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-6">
-              <button onclick="openBookingModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#adbc2f] hover:bg-[#9bb024] active:scale-95 text-neutral-950 font-bold text-xs sm:text-[13px] px-6 py-3.5 rounded-full shadow-glow transition-all duration-200 tracking-wider">
+              <button onclick="openBookingModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#00a8cc] hover:bg-[#008ea6] active:scale-95 text-white font-bold text-xs sm:text-[13px] px-6 py-3.5 rounded-full shadow-glow transition-all duration-200 tracking-wider">
                 <span>AGENDAR VALORACIÓN</span>
                 <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -327,7 +327,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 pt-4 sm:pt-8 md:pt-10 max-w-[580px]">
             <div class="card-gradient rounded-3xl p-5 border border-white/80 shadow-soft flex flex-col justify-between h-[150px]">
               <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
-                <svg class="w-4 h-4 text-[#adbc2f] fill-current" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 text-[#00a8cc] fill-current" viewBox="0 0 24 24">
                   <path d="M12 2C9.5 2 7.7 3.2 7 5.2C6.1 7.8 5.7 10 5.4 12.3c-.5 4 1 6.5 2.1 6.7.7.1 1.4-.4 2-1.3.6-.9 1.4-2.7 2.5-2.7s1.9 1.8 2.5 2.7c.6.9 1.3 1.4 2 1.3 1.1-.2 2.6-2.7 2.1-6.7-.3-2.3-.7-4.5-1.6-7.1C16.3 3.2 14.5 2 12 2z"></path>
                 </svg>
               </div>
@@ -341,7 +341,7 @@
 
             <div class="card-gradient rounded-3xl p-5 border border-white/80 shadow-soft flex flex-col justify-between h-[150px]">
               <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
-                <svg class="w-4 h-4 text-[#adbc2f] fill-current" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 text-[#00a8cc] fill-current" viewBox="0 0 24 24">
                   <path d="M12 2L13.8 8.2L20 10L13.8 11.8L12 18L10.2 11.8L4 10L10.2 8.2L12 2Z"></path>
                 </svg>
               </div>
@@ -388,7 +388,7 @@
       <div id="treatmentsTrack" class="flex gap-5 sm:gap-6 overflow-x-auto pb-4 pt-2 -mx-6 px-6 sm:-mx-10 sm:px-10 lg:-mx-16 lg:px-16 scroll-smooth snap-x snap-mandatory no-scrollbar">
         
         <!-- 1. Caries -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Tratamiento de Caries" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -399,14 +399,14 @@
               Eliminación de caries y restauración dental con resinas de alta estética para devolver la salud y forma natural de tus dientes.
             </p>
           </div>
-          <button onclick="openBookingModal('Caries')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Caries')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Consultar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 2. Profilaxis -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Profilaxis y Limpieza Medina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -417,14 +417,14 @@
               Limpieza dental profesional profunda para eliminar placa, sarro y manchas, manteniendo tus dientes sanos y brillantes.
             </p>
           </div>
-          <button onclick="openBookingModal('Profilaxis')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Profilaxis')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Agendar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 3. Periodoncia -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80" alt="Periodoncia y Cuidado de Encías" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -435,14 +435,14 @@
               Tratamiento de encías inflamadas, sangrado y retracción gingival para asegurar la firmeza y soporte de tus dientes.
             </p>
           </div>
-          <button onclick="openBookingModal('Periodoncia')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Periodoncia')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Consultar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 4. Prótesis -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80" alt="Prótesis Medinaes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -453,14 +453,14 @@
               Prótesis fijas y removibles de alta calidad para recuperar tu capacidad masticatoria y la estética de tu sonrisa.
             </p>
           </div>
-          <button onclick="openBookingModal('Prótesis')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Prótesis')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Cotizar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 5. Cirugías -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Cirugías Medinaes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -471,14 +471,14 @@
               Extracciones, cordales y procedimientos quirúrgicos seguros con anestesia local para una recuperación cómoda y efectiva.
             </p>
           </div>
-          <button onclick="openBookingModal('Cirugías')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Cirugías')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Consultar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 6. Carillas -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Carillas Medinaes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -489,14 +489,14 @@
               Láminas ultrafinas de porcelana o resina para corregir color, forma y espacio, logrando una sonrisa armónica y radiante.
             </p>
           </div>
-          <button onclick="openBookingModal('Carillas')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Carillas')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Cotizar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 7. Coronas -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Coronas Medinaes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -507,14 +507,14 @@
               Coronas de porcelana que protegen y restauran dientes debilitados con un acabado natural y duradero.
             </p>
           </div>
-          <button onclick="openBookingModal('Coronas')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Coronas')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Cotizar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 8. Blanqueamiento -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80" alt="Blanqueamiento Medina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -525,14 +525,14 @@
               Aclaramiento dental profesional con tecnología LED para dientes visiblemente más blancos en una sola sesión.
             </p>
           </div>
-          <button onclick="openBookingModal('Blanqueamiento')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Blanqueamiento')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Consultar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 9. Retenedores -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=800&q=80" alt="Retenedores Medinaes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -543,14 +543,14 @@
               Retenedores fijos y removibles para mantener la posición ideal y estabilidad de tus dientes.
             </p>
           </div>
-          <button onclick="openBookingModal('Retenedores')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Retenedores')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Consultar</span>
             <span>→</span>
           </button>
         </div>
 
         <!-- 10. Quita Hábitos -->
-        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-lime-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+        <div class="w-[82vw] sm:w-[340px] lg:w-[380px] shrink-0 snap-start group bg-neutral-50/70 hover:bg-white rounded-3xl p-5 sm:p-6 border border-neutral-200/60 hover:border-cyan-300 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="w-full h-48 rounded-2xl overflow-hidden mb-5 bg-neutral-100">
               <img src="https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=800&q=80" alt="Aparatos Quita Hábitos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -561,7 +561,7 @@
               Aparatología especializada para corregir hábitos como succión digital y deglución atípica en niños de forma segura.
             </p>
           </div>
-          <button onclick="openBookingModal('Quita Hábitos')" class="mt-6 text-xs font-bold text-[#adbc2f] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
+          <button onclick="openBookingModal('Quita Hábitos')" class="mt-6 text-xs font-bold text-[#00a8cc] hover:text-[#9bb024] flex items-center gap-1.5 group-hover:translate-x-0.5 transition-transform">
             <span>Consultar</span>
             <span>→</span>
           </button>
@@ -641,9 +641,9 @@
 
         <div class="relative bg-white rounded-3xl p-7 border border-neutral-200/60 shadow-card text-center hover:shadow-soft transition-shadow duration-300">
           <div class="w-14 h-14 rounded-2xl bg-lime-50 flex items-center justify-center mx-auto mb-5 ring-4 ring-white relative z-10">
-            <svg class="w-6 h-6 text-[#adbc2f]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="w-6 h-6 text-[#00a8cc]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <span class="text-[11px] font-bold text-[#adbc2f] tracking-widest">PASO 01</span>
+          <span class="text-[11px] font-bold text-[#00a8cc] tracking-widest">PASO 01</span>
           <h3 class="text-base font-bold text-neutral-900 mt-1.5">Diagnóstico Clínico</h3>
           <p class="text-xs text-neutral-500 mt-2 leading-relaxed">Evaluación clínica detallada en tu primera visita.</p>
         </div>
@@ -826,7 +826,7 @@
         </div>
 
         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full lg:w-auto">
-          <button onclick="openBookingModal()" class="w-full sm:w-auto text-center bg-[#adbc2f] hover:bg-[#9bb024] active:scale-95 text-neutral-950 font-extrabold text-xs sm:text-[13px] px-7 py-3.5 rounded-full transition-all shadow-glow">
+          <button onclick="openBookingModal()" class="w-full sm:w-auto text-center bg-[#00a8cc] hover:bg-[#008ea6] active:scale-95 text-white font-bold text-xs sm:text-[13px] px-7 py-3.5 rounded-full transition-all shadow-glow">
             Agendar Cita
           </button>
           <a href="#treatments" class="w-full sm:w-auto text-center border border-white/80 hover:bg-white/10 active:scale-95 text-white font-medium text-xs sm:text-[13px] px-7 py-3.5 rounded-full transition-all">
@@ -843,7 +843,7 @@
           <div class="flex items-center gap-2.5 mb-4">
             <img src="logo.png" alt="Dra. Johanna Medina Logo" class="w-9 h-9 object-contain">
             <div>
-              <span class="text-xl sm:text-2xl font-black text-white tracking-tight block">Dra. Johanna <span class="text-[#adbc2f]">Medina</span></span>
+              <span class="text-xl sm:text-2xl font-black text-white tracking-tight block">Dra. Johanna <span class="text-[#00a8cc]">Medina</span></span>
               <span class="text-[10px] font-bold text-[#00a8cc] tracking-wider uppercase block">Odontología Integral | Preventiva</span>
             </div>
           </div>
@@ -923,17 +923,17 @@
       <form onsubmit="handleBookingSubmit(event)" class="mt-5 space-y-3">
         <div>
           <label class="block text-[11px] font-bold text-neutral-600 uppercase mb-1">Nombre</label>
-          <input type="text" id="patientName" required placeholder="Tu nombre" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-[#adbc2f] focus:border-[#adbc2f]">
+          <input type="text" id="patientName" required placeholder="Tu nombre" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-[#00a8cc] focus:border-[#00a8cc]">
         </div>
 
         <div>
           <label class="block text-[11px] font-bold text-neutral-600 uppercase mb-1">WhatsApp</label>
-          <input type="tel" id="patientPhone" required placeholder="Tu teléfono" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-[#adbc2f] focus:border-[#adbc2f]">
+          <input type="tel" id="patientPhone" required placeholder="Tu teléfono" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-[#00a8cc] focus:border-[#00a8cc]">
         </div>
 
         <div>
           <label class="block text-[11px] font-bold text-neutral-600 uppercase mb-1">Tratamiento</label>
-          <select id="patientService" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-[#adbc2f] focus:border-[#adbc2f]">
+          <select id="patientService" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-[#00a8cc] focus:border-[#00a8cc]">
             <option>Caries</option>
             <option>Profilaxis</option>
             <option>Periodoncia</option>
@@ -947,7 +947,7 @@
           </select>
         </div>
 
-        <button type="submit" class="w-full bg-[#adbc2f] hover:bg-[#9bb024] active:scale-95 text-neutral-950 font-extrabold text-xs py-3 rounded-xl shadow-glow transition-all mt-4">
+        <button type="submit" class="w-full bg-[#00a8cc] hover:bg-[#008ea6] active:scale-95 text-white font-bold text-xs py-3 rounded-xl shadow-glow transition-all mt-4">
           CONFIRMAR POR WHATSAPP
         </button>
       </form>
